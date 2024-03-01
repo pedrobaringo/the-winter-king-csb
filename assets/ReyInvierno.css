@@ -11,8 +11,8 @@
     src: url("../assets/GaramondPremrPro-BdItCapt.ttf");
 }
 @font-face {
-    font-family: "Cabazon";
-    src: url("../assets/Cabazon.otf");
+    font-family: "KungFu";
+    src: url("../assets/kungfumasterspaced.ttf");
 }
 #logo {
     content: url(../assets/TituloEsquina.webp);
@@ -22,11 +22,11 @@
     background-size: cover;
 }
 .charname{
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:40px;
 }
 .tabbedpanel nav{
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:19px;
 	font-weight:200;
 	text-align:center;
@@ -54,7 +54,7 @@
 	border-radius:0px 7px 7px 0px;
 }
 .tituloshab {
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:26px;
 	margin-bottom:0px;
 	color: #f8f4ec;
@@ -66,7 +66,7 @@
 }
 
 .paneliniciativa{
-	font-family:'Cabazon';
+	font-family:'Garamond';
 	font-size:18px;
 	font-weight:200;
 	text-align:center;
@@ -96,14 +96,14 @@
 	display:none;
 }
 .chat-message .message-content h1{
-font-family:'Cabazon';
+font-family:'KungFu';
 	font-size:30px;
 	font-weight:200;
 	text-align:center;
 	border:0px;
 }
 .chat-message .message-content h2{
-font-family:'Cabazon';
+font-family:'KungFu';
 	font-size:25px;
 	font-weight:200;
 	text-align:center;
@@ -128,7 +128,7 @@ font-family:'Garamond';
 	border-bottom:2px solid #671308;
 }
 .chat-message .message-header .message-sender{
-	font-family: 'Cabazon';
+	font-family: 'KungFu';
 	text-align:center;
 	font-size:30px;
 	text-wrap: wrap;
@@ -339,7 +339,7 @@ font-family:'Garamond';
 	font-size:17px;
 }
 .desctitulorojo {
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size: 25px;
 	color: #f8f4ec;
 	background-color:#690000;
@@ -393,7 +393,7 @@ font-family:'Garamond';
 	scale: 1;
 	margin:0px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'Garamond';
 	font-size:20px;
 	background-color: #f8f4ec;
 	width:25px;
@@ -406,7 +406,7 @@ font-family:'Garamond';
 	right:10px;
 	margin:0px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'Garamond';
 	font-size:20px;
 	background-color: #f8f4ec;
 	width:25px;
@@ -457,7 +457,7 @@ font-family:'Garamond';
 	border-radius:0px 7px 7px 0px;
 }
 .titulosmaestrias {
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:26px;
 	color: #f8f4ec;
 	background-color: #af8a2e;
@@ -493,7 +493,7 @@ font-family:'Garamond';
 	margin-top:5px;
 }
 .titulosvitaincap {
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:26px;
 	color: #f8f4ec;
 	background-color: #af8a2e;
@@ -909,7 +909,7 @@ font-family:'Garamond';
 	background-color:  transparent;
 }
 .titulosarmadura {
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:26px;
 	color: #f8f4ec;
 	background-color: #58514e;
@@ -1045,14 +1045,15 @@ font-family:'Garamond';
 	grid-template-columns:15% 55% 28%;
 }
 .checksarmadura {
-	gap:10px;
-	margin-top:42px;
+	gap:5px;
+	margin-top:47px;
 	margin-bottom:8px;
 	margin-left:10px;
 	border-image-source: url(../assets/cajaarmadura.webp);
 	border-image-slice: 10%;
 	border-image-width: 10%;
 	border-image-outset: 2px;
+ height:36px;
 }
 .chat-message .message-content {
 	text-align:center;
@@ -1103,7 +1104,7 @@ font-family:'Garamond';
 	grid-template-columns:65% 35%;
 }
 .paneldommagia {
-	grid-template-columns:40% 10%;
+	grid-template-columns:60% 10%;
 }
 .paneltipomagia >*:nth-child(even){
 	text-align:left;
@@ -1112,7 +1113,7 @@ font-family:'Garamond';
 .tipomagia{
 	color:black;
 	font-size:25px;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 }
 .textoaclardominio {
 	color:black;
@@ -1166,7 +1167,7 @@ font-family:'Garamond';
 	left:-2%;
 }
 .titulorojofull {
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:25px;
 	color: #f8f4ec;
 	background-color: #690000;
@@ -1188,7 +1189,7 @@ font-family:'Garamond';
 	background-color:black;
 	color:#f8f4ec;
 	border-radius: 7px;
-	font-family:'Cabazon';
+	font-family:'Garamond';
 	font-size:21px;
 	font-style: normal;
 }
@@ -1198,7 +1199,7 @@ font-family:'Garamond';
 .tablamagmag tr td:first-child{
 	width:6%;
 	font-size:28px;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-style: normal;
 	padding-top:0px;
 }
@@ -1235,7 +1236,7 @@ font-family:'Garamond';
 	font-size:13px;
 }
 .titulorojomagia {
-	font-family:'Garamond';
+	font-family:'KungFu';
 	font-size:25px;
 	color: #f8f4ec;
 	background-color: #690000;
@@ -1270,7 +1271,7 @@ font-family:'Garamond';
 	right:10px;
 	margin:0px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:20px;
 	background-color: #f8f4ec;
 	width:20px;
@@ -1313,7 +1314,7 @@ font-family:'Garamond';
     margin-left: 5px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:23px;
 }
 .tablaconjuros  tr td:nth-child(1) a img{
@@ -1325,7 +1326,7 @@ font-family:'Garamond';
     margin-left: 5px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:23px;
 }
 .tablaconjuros  tr td:nth-child(2){
@@ -1344,7 +1345,7 @@ font-family:'Garamond';
 	scale: 1.1;
 	right:20px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'Garamond';
 	font-size:20px;
 	background-color: #f8f4ec;
 	border-color:transparent;
@@ -1357,7 +1358,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .tablaconjuros  tr td:nth-child(5){
@@ -1371,7 +1372,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .tablaconjuros  tr td:nth-child(7){
@@ -1385,7 +1386,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .labgridconj {
@@ -1407,7 +1408,7 @@ font-family:'Garamond';
 	scale: 1;
 	right:10px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:20px;
 	background-color: #f8f4ec;
 	width:23px;
@@ -1484,7 +1485,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 	height:100%;
 }
@@ -1536,7 +1537,7 @@ font-family:'Garamond';
     margin-left: 5px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:23px;
 }
 .tablaconjurosdin  tr td:nth-child(1) a img{
@@ -1548,7 +1549,7 @@ font-family:'Garamond';
     margin-left: 5px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:23px;
 }
 .tablaconjurosdin  tr td:nth-child(2){
@@ -1576,7 +1577,7 @@ font-family:'Garamond';
 	scale: 1.1;
 	right:20px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:20px;
 	background-color: #f8f4ec;
 	border-color:transparent;
@@ -1588,11 +1589,11 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .tablaconjurosdin  tr td:nth-child(5){
-	grid-column: 2 / span 4;
+	grid-column: 2 / span 3;
 	font-family: 'GaramondIt';
 	font-size:18px;
 	margin:5px 0px 0px 0px;
@@ -1602,7 +1603,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .tablaconjurosdin  tr td:nth-child(7){
@@ -1616,7 +1617,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .labgridconj {
@@ -1638,7 +1639,7 @@ font-family:'Garamond';
 	scale: 1;
 	right:10px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:20px;
 	background-color: #f8f4ec;
 	width:23px;
@@ -1652,7 +1653,7 @@ font-family:'Garamond';
 	scale: 1;
 	right:10px;
 	text-align:center;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:20px;
 	background-color: #f8f4ec;
 	width:23px;
@@ -1727,7 +1728,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:21px;
 	height:100%;
 }
@@ -1792,7 +1793,7 @@ font-family:'Garamond';
     margin-left: 5px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:23px;
 	color: #f8f4ec;
 	background-color: #af8a2e;
@@ -1850,6 +1851,7 @@ font-family:'Garamond';
 	color: black;
 	border:0px;
 	text-align:center;
+ margin-bottom:5px;
 }
 .tablaarmadurafixed tr:nth-child(2) td:nth-child(1){
 	background-color: #58514e;
@@ -1892,6 +1894,38 @@ font-family:'Garamond';
 	border-style: solid;
 	border-radius:0px;
 }
+
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(2){
+	border-width: 1.5px 0px 1.5px 1.5px;
+	border-color: black;
+	border-style: solid;
+	border-radius:5px 0px 0px 5px;
+}
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(2){
+	border-width: 1.5px 0px 1.5px 1.5px;
+	border-color: black;
+	border-style: solid;
+	border-radius:5px 0px 0px 5px;
+}
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(5){
+	border-width: 1.5px 1.5px 1.5px 0px;
+	border-color: black;
+	border-style: solid;
+	border-radius:0px 5px 5px 0px;
+}
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(3){
+	border-width: 1.5px 0px 1.5px 0px;
+	border-color: black;
+	border-style: solid;
+	border-radius:0px;
+}
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(4){
+	border-width: 1.5px 0px 1.5px 0px;
+	border-color: black;
+	border-style: solid;
+	border-radius:0px;
+}
+
 .tablaarmadurafixed table{
 	border: 0px;
 	background:transparent;
@@ -1929,14 +1963,14 @@ font-family:'Garamond';
 	justify-content:center;
 }
 .titulosarmadurafixed {
-	font-family:'Cabazon';
-	font-size:26px;
+	font-family:'Garamond';
+	font-size:15px;
 	color: #f8f4ec;
 	background-color: #58514e;
 	border-radius: 7px 0px 0px 7px;
 	margin-left:0px;
 	padding-left:3px;
-	padding-top:7px;
+	padding-top:10px;
 	padding-bottom:5px;
 }
 .armaduraclass input[type="text"]{
@@ -2039,7 +2073,7 @@ font-family:'Garamond';
 }
 .tablaconjurosdin2 .custom-system-dynamicRow{
 	display:grid;
-	grid-template-columns: 15% 12.5% 5% 14% 5% 12.5% 5% 10% 5% 11% 5%;
+	grid-template-columns: 15% 5% 12.5% 14% 5% 12.5% 5% 10% 5% 11% 5%;
 	grid-template-rows: auto auto auto auto;
 	align-items:center;
 	width:100%
@@ -2049,7 +2083,7 @@ font-family:'Garamond';
     margin-left: 5px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:23px;
 }
 .tablaconjurosdin2  tr td:nth-child(1) a img{
@@ -2061,7 +2095,7 @@ font-family:'Garamond';
     margin-left: 5px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:23px;
 }
 .tablaconjurosdin2  tr td:nth-child(2){
@@ -2080,11 +2114,11 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .tablaconjurosdin2  tr td:nth-child(5){
-	grid-column: 2 / span 4;
+	grid-column: 2 / span 3;
 	font-family: 'GaramondIt';
 	font-size:18px;
 	margin:5px 0px 0px 0px;
@@ -2094,7 +2128,7 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:22px;
 }
 .tablaconjurosdin2  tr td:nth-child(7){
@@ -2109,12 +2143,12 @@ font-family:'Garamond';
     margin:0px;
     border: 0px;
     background: transparent;
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:21px;
 	height:100%;
 }
 .tablaconjurosdin2  tr td:nth-child(9){
-	grid-column: 2 / span 9;
+	grid-column: 3 / span 8;
 	font-family: 'GaramondIt';
 	font-size:18px;
 }
@@ -2123,7 +2157,7 @@ font-family:'Garamond';
 	grid-template-columns: 25% 70%;
 }
 .descobjlab {
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:21px;
 }
 .descobj input[type="text"]{
@@ -2157,7 +2191,7 @@ font-family:'Garamond';
 	border-radius:0px;
 }
 .itemname input[type="text"]{
-	font-family:'Cabazon';
+	font-family:'KungFu';
 	font-size:40px;
 	border-width: 0px 0px 1.5px 0px;
 	background-color:transparent;
@@ -2319,4 +2353,11 @@ font-family:'Garamond';
 }
 .panelchecksvitaincap div:empty{
 	display:none;
+}
+.custom-system-roll {
+	background:transparent;
+	border:0px;
+	font-family: 'KungFu';
+    font-size: 25px;
+    font-weight: 200;
 }

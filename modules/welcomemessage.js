@@ -67,7 +67,7 @@ Hooks.once("ready", function() {
 				}
 				}, 100);
 			});
-			game.settings.set("custom-system-builder", "initFormula", "iniciativa");
+			game.settings.set("custom-system-builder", "initFormula", "isnpc==1 ? iniciativa:iniciativa+0.01");
 			game.settings.set("the-winter-king-csb", "firstTimeStart", false);
 		} else if (versactual!=game.user.getFlag("the-winter-king-csb", "lastVersion")) {
 			let buttonId=Date.now();
@@ -113,6 +113,7 @@ Hooks.once("ready", function() {
 				}
 				}, 500);
 			});
+      game.settings.set("custom-system-builder", "initFormula", "isnpc==1 ? iniciativa:iniciativa+0.01");
 		}
 	} else if (!game.user.getFlag("the-winter-king-csb", "welcomeMessage") || forzarmensaje==true) {
 		let buttonId=Date.now();

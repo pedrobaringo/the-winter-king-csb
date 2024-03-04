@@ -1,3 +1,7 @@
+## Quickstart Rules
+Here you can download the Quickstart Rules to play The Winter King Roleplaying Game:
+https://shadowlandsgames.com/wp-content/uploads/2024/03/The-Winter-King-Quickstart-Guide.pdf
+
 ## Install
 To install this module in Foundry you have to use the following Manifest in the modules menu as shown in the image: https://github.com/pedrobaringo/the-winter-king-csb/releases/latest/download/module.json
 

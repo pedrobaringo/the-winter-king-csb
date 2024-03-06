@@ -16,7 +16,7 @@ Here you can download the Quickstart Rules to play The Winter King Roleplaying G
 - [Create an NPC](#create-an-npc)
 - [Create Weapons](#create-weapons)
 - [Create Skills](#create-skills)
-- [Roll](#roll)
+- [Rolls](#rolls)
 
 ## Install
 To install this module in Foundry you have to use the following Manifest in the modules menu as shown in the image: https://github.com/pedrobaringo/the-winter-king-csb/releases/latest/download/module.json

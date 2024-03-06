@@ -1,7 +1,7 @@
 {
   "id": "the-winter-king-csb",
   "title": "The Winter King (CSB)",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -25,18 +25,16 @@
   "authors": [
     {
       "name": "Pedro Baringo",
-	  "url": "https://github.com/pedrobaringo",
-	  "discord": "pedrobari",
-	  "github": "pedrobaringo",
-      "flags": {}
+      "url": "https://github.com/pedrobaringo",
+      "discord": "pedrobari"
     }
   ],
   "esmodules": [
-		"./modules/winterking.js",
-   "./modules/welcomemessage.js"
-	],
- "styles": [
-    "./assets/ReyInvierno.css"
+    "modules/winterking.js",
+    "modules/welcomemessage.js"
+  ],
+  "styles": [
+    "assets/ReyInvierno.css"
   ],
   "packs": [
     {
@@ -44,32 +42,45 @@
       "label": "Actor_Templates",
       "path": "packs/actortemplates",
       "type": "Actor",
+      "system": "custom-system-builder",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "custom-system-builder",
-      "flags": {}
+      }
     },
     {
       "name": "objecttemplates",
       "label": "Object_Templates",
       "path": "packs/objecttemplates",
       "type": "Item",
+      "system": "custom-system-builder",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "the-green-knights-lai",
+      "label": "The Green Knight's Lai",
+      "path": "packs/the-green-knights-lai",
+      "type": "Adventure",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "custom-system-builder",
+      "system": "custom-system-builder"
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/the-winter-king-csb/assets/thewinterking-banner.webp",
+      "thumbnail": "modules/the-winter-king-csb/assets/thewinterking-banner.webp",
+      "loop": false,
       "flags": {}
     }
   ],
-  "media": [{
-		"type": "setup",
-		"url": "modules/the-winter-king-csb/assets/thewinterking-banner.webp",
-		"thumbnail": "modules/the-winter-king-csb/assets/thewinterking-banner.webp"
-	}],
   "url": "https://github.com/pedrobaringo/the-winter-king-csb",
   "manifest": "https://github.com/pedrobaringo/the-winter-king-csb/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/the-winter-king-csb/releases/download/1.0.5/the-winter-king-csb.zip"
+  "download": "https://github.com/pedrobaringo/the-winter-king-csb/releases/download/1.0.6/the-winter-king-csb.zip"
 }

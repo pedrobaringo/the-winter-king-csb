@@ -1,7 +1,7 @@
 {
   "id": "the-winter-king-csb",
   "title": "The Winter King (CSB)",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -71,5 +71,5 @@
 	}],
   "url": "https://github.com/pedrobaringo/the-winter-king-csb",
   "manifest": "https://github.com/pedrobaringo/the-winter-king-csb/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/the-winter-king-csb/releases/download/1.0.4/the-winter-king-csb.zip"
+  "download": "https://github.com/pedrobaringo/the-winter-king-csb/releases/download/1.0.5/the-winter-king-csb.zip"
 }

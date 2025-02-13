@@ -1,14 +1,14 @@
-2024/06/20-11:31:49.486 ad0 Recovering log #55
-2024/06/20-11:31:49.490 ad0 Delete type=0 #55
-2024/06/20-11:31:49.490 ad0 Delete type=3 #53
-2024/06/20-11:39:25.606 34f0 Level-0 table #61: started
-2024/06/20-11:39:25.619 34f0 Level-0 table #61: 254261 bytes OK
-2024/06/20-11:39:25.621 34f0 Delete type=0 #59
-2024/06/20-11:39:25.637 34f0 Manual compaction at level-0 from '!actors!IABfT2fnm4EUV41h' @ 72057594037927935 : 1 .. '!actors!U818TrLNjGVQGEcx' @ 0 : 0; will stop at '!actors!U818TrLNjGVQGEcx' @ 42 : 1
-2024/06/20-11:39:25.637 34f0 Compacting 1@0 + 1@1 files
-2024/06/20-11:39:25.646 34f0 Generated table #62@0: 2 keys, 254261 bytes
-2024/06/20-11:39:25.646 34f0 Compacted 1@0 + 1@1 files => 254261 bytes
-2024/06/20-11:39:25.649 34f0 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/06/20-11:39:25.649 34f0 Delete type=2 #57
-2024/06/20-11:39:25.649 34f0 Delete type=2 #61
-2024/06/20-11:39:25.649 34f0 Manual compaction at level-0 from '!actors!U818TrLNjGVQGEcx' @ 42 : 1 .. '!actors!U818TrLNjGVQGEcx' @ 0 : 0; will stop at (end)
+2025/02/13-13:28:32.128 29dc Recovering log #70
+2025/02/13-13:28:32.134 29dc Delete type=0 #70
+2025/02/13-13:28:32.134 29dc Delete type=3 #68
+2025/02/13-13:30:15.476 43a4 Level-0 table #75: started
+2025/02/13-13:30:15.485 43a4 Level-0 table #75: 221858 bytes OK
+2025/02/13-13:30:15.487 43a4 Delete type=0 #73
+2025/02/13-13:30:15.491 43a4 Manual compaction at level-0 from '!actors!IABfT2fnm4EUV41h' @ 72057594037927935 : 1 .. '!actors!U818TrLNjGVQGEcx' @ 0 : 0; will stop at '!actors!U818TrLNjGVQGEcx' @ 46 : 1
+2025/02/13-13:30:15.491 43a4 Compacting 1@0 + 1@1 files
+2025/02/13-13:30:15.501 43a4 Generated table #76@0: 2 keys, 221858 bytes
+2025/02/13-13:30:15.501 43a4 Compacted 1@0 + 1@1 files => 221858 bytes
+2025/02/13-13:30:15.504 43a4 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/02/13-13:30:15.505 43a4 Delete type=2 #67
+2025/02/13-13:30:15.505 43a4 Delete type=2 #75
+2025/02/13-13:30:15.509 43a4 Manual compaction at level-0 from '!actors!U818TrLNjGVQGEcx' @ 46 : 1 .. '!actors!U818TrLNjGVQGEcx' @ 0 : 0; will stop at (end)

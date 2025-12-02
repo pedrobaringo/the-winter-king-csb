@@ -17,9 +17,26 @@
 #logo {
     content: url(../assets/TituloEsquina.webp);
 }
-.window-app .window-content {
+.sheet .window-content {
     background: url(../assets/FondoRI.webp);
     background-size: cover;
+}
+.sheet input[type=text] {
+		box-shadow:0px 0px;
+		padding:0px;
+		color: black;
+		border: 1px solid black;
+}
+.sheet select{
+	color:black;
+	background:transparent;
+	border: 1px solid black;
+}
+.sheet .window-content .fas:before {
+    color:black;
+}
+.sheet .window-content .fa-dice:before {
+	color:white
 }
 .charname{
 	font-family:'KungFu';
@@ -46,33 +63,38 @@
 	border: 0px;
 }
 .tablehabilidades table tr:first-child td:first-child{
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 }
 .tablehabilidades table tr:first-child td{
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 }
 .tituloshab {
-	font-family:'KungFu';
-	font-size:26px;
-	margin-bottom:0px;
-	color: #f8f4ec;
-	padding-top:3px;
-	padding-bottom:3px;
+    font-family: 'KungFu';
+    font-size: 26px;
+    margin-bottom: 0px;
+    margin-left:5px;
+    color: #f8f4ec;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.tituloshab .custom-system-label-icons {
+    font-size: 14px;
+    color: #f8f4ec;
 }
 .tituloshab .custom-system-rollable {
 	color: #f8f4ec;
 }
 
-.paneliniciativa{
-	font-family:'Garamond';
-	font-size:18px;
-	font-weight:200;
-	text-align:center;
-	color:black;
-	color:black;
-	grid-template-columns:40% 28% 15% 10%;
+.paneliniciativa {
+    font-family: 'Garamond';
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    color: black;
+    color: black;
+    grid-template-columns: 30% 30%;
 }
 .dice-roll .dice-formula {
 	display:none;
@@ -185,10 +207,10 @@ font-family:'Garamond';
 	display:grid;
 	grid-template-columns: auto auto auto;
 }
-.custom-system-user-input-button[data-action="sub-10"] {
+.custom-system-user-input-button[data-inputaction="sub-10"] {
 	display:none;
 }
-.custom-system-user-input-button[data-action="add-10"] {
+.custom-system-user-input-button[data-inputaction="add-10"] {
 	display:none;
 }
 .custom-system-user-inputs tr:nth-child(even) {
@@ -209,6 +231,7 @@ font-family:'Garamond';
 .panelhab2 {
 	margin:0px;
 	padding:0px;
+	justify-content: flex-start;
 }
 .panelhitosgrande {
 	gap:0px;
@@ -224,10 +247,16 @@ font-family:'Garamond';
 }
 .hitostandard input[type="checkbox"]{
 	margin:0px;
+	width: 20px;
+	height:20px;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 	transform: scale(0.8);
 	-webkit-appearance: initial;
     appearance: initial;
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:2px;
 	border-style: solid;
 	border-radius:3px;
@@ -251,6 +280,10 @@ font-family:'Garamond';
 	border-width:1.5px;
 	border-style: solid;
 	border-radius:3px;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .hito1d input[type="checkbox"] {
 	background-image: url(../assets/check1d.webp);
@@ -339,13 +372,14 @@ font-family:'Garamond';
 	font-size:17px;
 }
 .desctitulorojo {
-	font-family:'KungFu';
-	font-size: 25px;
-	color: #f8f4ec;
-	background-color:#690000;
-	margin:0px;
-	padding:5px;
-	border-radius: 7px 0px 0px 7px;
+    font-family: 'KungFu';
+    font-size: 25px;
+    color: #f8f4ec;
+    background-color: #9c1006;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 12px;
 }
 .desctitulorojo a{
 	color: #f8f4ec;
@@ -401,9 +435,9 @@ font-family:'Garamond';
 	border-color:transparent;
 }
 .habnum input[type="text"]{
-	border-radius:50%;
+	border-radius:0px 3px 3px 0px;
 	scale: 1.3;
-	right:10px;
+	right:9px;
 	margin:0px;
 	text-align:center;
 	font-family:'Garamond';
@@ -414,7 +448,8 @@ font-family:'Garamond';
 	border-color:transparent;
 }
 .habnum {
-	margin-right:10px;
+	margin-right:7px;
+    margin-left:0px;
 	width:25px;
 	height:25px;
 }
@@ -460,7 +495,7 @@ font-family:'Garamond';
 	font-family:'KungFu';
 	font-size:26px;
 	color: #f8f4ec;
-	background-color: #af8a2e;
+	background-color: #a7a097;
 	border-radius: 7px 0px 0px 7px;
 	margin-bottom:5px;
 	margin-left:0px;
@@ -475,7 +510,7 @@ font-family:'Garamond';
 	grid-template-columns:85% 15%;
 }
 .checksmaestrias {
-	background-color: #af8a2e;
+	background-color: #a7a097;
 	border-radius: 0px 7px 7px 0px;
 	margin-left:0px;
 	margin-bottom:5px;
@@ -485,24 +520,25 @@ font-family:'Garamond';
 	gap:0px 10px;
 }
 .maestriaslab {
-	color: #af8a2e;
+	color: #6a5b51;
 	font-family:'GaramondBdIt';
 	font-style: italic;
 	font-weight: bold;
 	font-size:20px;
 	margin-top:5px;
+	max-height:25px;
 }
 .titulosvitaincap {
-	font-family:'KungFu';
-	font-size:26px;
-	color: #f8f4ec;
-	background-color: #af8a2e;
-	border-radius: 7px 7px 7px 7px;
-	margin-bottom:-50px;
-	margin-left:0px;
-	padding-left:10px;
-	padding-top:5px;
-	padding-bottom:5px;
+    font-family: 'KungFu';
+    font-size: 26px;
+    color: #f8f4ec;
+    background-color: #9c1006;
+    border-radius: 7px 7px 7px 7px;
+    margin-left: 0px;
+    margin-bottom:10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .vitacheck1, .vitacheck2, .vitacheck3, .vitacheck4, .vitacheck5, .vitacheck6 {
 	margin:0px;
@@ -511,16 +547,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check1vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1.2em;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck1 input[type="checkbox"]:checked {
 	background-image: url(../assets/check1vitachecked.webp);
@@ -534,16 +574,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check2vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1.2em;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck2 input[type="checkbox"]:checked {
 	background-image: url(../assets/check2vitachecked.webp);
@@ -557,16 +601,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check3vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1.2em;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck3 input[type="checkbox"]:checked {
 	background-image: url(../assets/check3vitachecked.webp);
@@ -580,16 +628,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check4vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1.2em;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck4 input[type="checkbox"]:checked {
 	background-image: url(../assets/check4vitachecked.webp);
@@ -603,16 +655,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check5vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1.2em;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck5 input[type="checkbox"]:checked {
 	background-image: url(../assets/check5vitachecked.webp);
@@ -626,16 +682,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check6vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1.2em;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck6 input[type="checkbox"]:checked {
 	background-image: url(../assets/check6vitachecked.webp);
@@ -649,20 +709,20 @@ font-family:'Garamond';
 	position:relative;
 }
 .panelvitasombra {
-	border-color: #58514e;
-	border-width:3px;
-	border-style: solid;
-	border-radius:7px;
-	position:absolute;
-	margin:0px;
-	height: 60%;
-	width:104%;
-	top:25%;
-	left:-2%;
+	border-color: #6a5b51;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    position: absolute;
+    margin: 0px;
+    height: 55%;
+    width: 104%;
+    top: 20%;
+    left: -2%;
 }
-.panelchecksvitaincap{
-	margin-top:20px;
-	gap:4px;
+.panelchecksvitaincap {
+    margin-top: 0px;
+    gap: 4px;
 }
 .incapcheck1, .incapcheck2{
 	margin:0px;
@@ -671,12 +731,16 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;	
-	background-color:white;
+	border-radius:50%;	
+	background-color:#f9f6ee;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .incapcheck1 input[type="checkbox"]:checked {
 	background-image:url(../assets/CheckedX.webp);
@@ -689,12 +753,16 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: dashed;
-	border-radius:3px;	
+	border-radius:50%;	
 	background-color:#d7d4d1;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .incapcheck2 input[type="checkbox"]:checked {
 	background-image:url(../assets/CheckedX.webp);
@@ -704,20 +772,20 @@ font-family:'Garamond';
     cursor: pointer;
 }
 .tituloidiomas {
-	font-family:'Garamond';
+	font-family:'KungFu';
 	text-transform: uppercase;
 	font-size:26px;
 	color: #f8f4ec;
-	background-color: black;
+	background-color: #322520;
 	border-radius: 7px 7px 7px 7px;
 	margin-left:0px;
 	padding-left:10px;
-	margin-top:20px;
 	padding-top:5px;
 	padding-bottom:5px;
+	max-height: 42.5px;
 }
 .tituloescudo {
-	font-family:'Garamond';
+	font-family:'KungFu';
 	text-transform: uppercase;
 	font-size:26px;
 	color: #f8f4ec;
@@ -728,9 +796,11 @@ font-family:'Garamond';
 	margin-top:20px;
 	padding-top:5px;
 	padding-bottom:5px;
+	max-height:42.5px;
 }
 .panelright {
-	margin-left:10px;
+    margin-left: 10px;
+    justify-content: flex-start;
 }
 .tableidiomas table{
 	background-color: #f0f8ff00;
@@ -802,6 +872,10 @@ font-family:'Garamond';
 	border-radius:3px;	
 	background-color:#f8f4ec;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .checksmaestrias input[type="checkbox"]:checked {	
 	background-image:url(../assets/Checked.webp);
@@ -912,7 +986,7 @@ font-family:'Garamond';
 	font-family:'KungFu';
 	font-size:26px;
 	color: #f8f4ec;
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius: 7px 0px 0px 7px;
 	margin-left:0px;
 	padding-left:10px;
@@ -1024,12 +1098,16 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;	
-	background-color:white;
+	border-radius:50%;	
+	background-color:transparent;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .checkarmad input[type="checkbox"]:checked {
 	background-image:url(../assets/CheckedX.webp);
@@ -1043,17 +1121,6 @@ font-family:'Garamond';
 	gap:5px;
 	margin:0px;
 	grid-template-columns:15% 55% 28%;
-}
-.checksarmadura {
-	gap:5px;
-	margin-top:47px;
-	margin-bottom:8px;
-	margin-left:10px;
-	border-image-source: url(../assets/cajaarmadura.webp);
-	border-image-slice: 10%;
-	border-image-width: 10%;
-	border-image-outset: 2px;
- height:36px;
 }
 .chat-message .message-content {
 	text-align:center;
@@ -1091,6 +1158,7 @@ font-family:'Garamond';
 }
 .panelmagiaizq {
 	margin:0px;
+	justify-content: flex-start;
 }
 .panelmagiader {
 	margin:0px 0px 0px 10px;
@@ -1099,6 +1167,7 @@ font-family:'Garamond';
 	border-image-width: 0% 0% 0% 0.8%;
 	border-image-repeat: stretch;
 	padding-left:5px;
+	justify-content: flex-start;
 }
 .paneltipomagia {
 	grid-template-columns:65% 35%;
@@ -1126,12 +1195,40 @@ font-family:'Garamond';
 	margin-bottom:0px;
 }
 .tableaccmag table tr:first-child td:first-child{
-	background-color: #58514e;
+	background-color: #a59d91;
 	border-radius:7px 0px 0px 7px;
 }
 .tableaccmag table tr:first-child td{
-	background-color: #58514e;
+	background-color: #a59d91;
 	border-radius:0px 7px 7px 0px;
+}
+.tituloaccobjmag {
+    font-family: 'KungFu';
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #f8f4ec;
+    background-color: #766d67;
+    border-radius: 7px 7px 7px 7px;
+    margin-left: 0px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+	max-height: fit-content;
+}
+.tituloaccobjmagprincipal {
+    font-family: 'KungFu';
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #f8f4ec;
+    background-color: #30231e;
+    border-radius: 7px 7px 7px 7px;
+    margin-left: 0px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+	max-height:45.5px;
 }
 .canscheck1{
 	margin:0px;
@@ -1143,9 +1240,13 @@ font-family:'Garamond';
 	border-color: black;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;	
+	border-radius:50%;	
 	background-color:white;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .canscheck1 input[type="checkbox"]:checked {
 	background-image:url(../assets/CheckedX.webp);
@@ -1154,23 +1255,36 @@ font-family:'Garamond';
 	background-size: contain;
     cursor: pointer;
 }
-.panelcanssombra {
-	border-color: black;
-	border-width:3px;
-	border-style: solid;
-	border-radius:7px;
-	position:absolute;
+.canscheck2{
 	margin:0px;
-	height: 53%;
-	width:104%;
-	top:37%;
-	left:-2%;
+}
+.canscheck2 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	transform: scale(1.4);
+	border-color: #6a5b51;
+	border-width:1.5px;
+	border-style: dashed;
+	border-radius:50%;	
+	background-color:#d7d4d1;
+    cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
+}
+.canscheck2 input[type="checkbox"]:checked {
+	background-image:url(../assets/CheckedX.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    cursor: pointer;
 }
 .titulorojofull {
 	font-family:'KungFu';
 	font-size:25px;
 	color: #f8f4ec;
-	background-color: #690000;
+	background-color: #9c1006;
 	border-radius: 7px 7px 7px 7px;
 	margin-left:0px;
 	padding-left:10px;
@@ -1219,7 +1333,7 @@ font-family:'Garamond';
 	background-color:black;
 }
 .tablamagmag td{
-	background-color:#58514e;
+	background-color:#6a5b51;
 	color:#f8f4ec;
 	border-radius: 7px;
 	font-family:'Garamond';
@@ -1239,7 +1353,7 @@ font-family:'Garamond';
 	font-family:'KungFu';
 	font-size:25px;
 	color: #f8f4ec;
-	background-color: #690000;
+	background-color: #30231e;
 	border-radius: 7px 7px 7px 7px;
 	margin-left:0px;
 	padding-left:10px;
@@ -1248,17 +1362,18 @@ font-family:'Garamond';
 	padding-bottom:5px;
 }
 .titulodomagia {
-	font-family:'Garamond';
+	font-family:'KungFu';
 	text-transform: uppercase;
 	font-size:22px;
 	color: #f8f4ec;
-	background-color: black;
+	background-color: #756b65;
 	border-radius: 7px 7px 7px 7px;
 	margin-left:0px;
 	padding-left:10px;
 	margin-top:20px;
 	padding-top:5px;
 	padding-bottom:5px;
+	max-height: fit-content;
 }
 .factmaglabels {
 	font-family:'Garamond';
@@ -1292,7 +1407,7 @@ font-family:'Garamond';
 	table-layout: fixed;
 }
 .tablafactmag td{
-	background-color:#58514e;
+	background-color:#6a5b51;
 	color:#f8f4ec;
 	border-radius: 7px;
 	font-family:'Garamond';
@@ -1352,6 +1467,7 @@ font-family:'Garamond';
 	margin-top:4px;
 	width:23px;
 	height:23px;
+	color:black;
 }
 .tablaconjuros  tr td:nth-child(4){
 	color: black;
@@ -1396,7 +1512,7 @@ font-family:'Garamond';
 	margin-top:20px;
 }
 .tablaconjuros  tr td:nth-child(9){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1418,12 +1534,12 @@ font-family:'Garamond';
 	margin-top:80%;
 }
 .tablaconjuros  tr td:nth-child(10){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjuros  tr td:nth-child(11){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1432,12 +1548,12 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjuros  tr td:nth-child(12){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjuros  tr td:nth-child(13){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1446,12 +1562,12 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjuros  tr td:nth-child(14){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjuros  tr td:nth-child(15){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1460,12 +1576,12 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjuros  tr td:nth-child(16){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjuros  tr td:nth-child(17){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1474,7 +1590,7 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjuros  tr td:nth-child(18){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 	align-items: center;
@@ -1563,6 +1679,7 @@ font-family:'Garamond';
 	font-size:23px;
 	color: #f8f4ec;
 	text-transform: uppercase;
+	padding-top:4px;
 }
 .tiradalabcss .custom-system-rollable {
     color: #f8f4ec;
@@ -1627,7 +1744,7 @@ font-family:'Garamond';
 	margin-top:20px;
 }
 .tablaconjurosdin  tr td:nth-child(9){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1661,12 +1778,12 @@ font-family:'Garamond';
 	border-color:transparent;
 }
 .tablaconjurosdin  tr td:nth-child(10){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjurosdin  tr td:nth-child(11){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1675,12 +1792,12 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjurosdin  tr td:nth-child(12){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjurosdin  tr td:nth-child(13){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1689,12 +1806,12 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjurosdin  tr td:nth-child(14){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjurosdin  tr td:nth-child(15){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1703,12 +1820,12 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjurosdin  tr td:nth-child(16){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
 .tablaconjurosdin  tr td:nth-child(17){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:7px 0px 0px 7px;
 	font-family: 'GaramondIt';
 	font-size:15px;
@@ -1717,7 +1834,7 @@ font-family:'Garamond';
 	margin-left:2px;
 }
 .tablaconjurosdin  tr td:nth-child(18){
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 	align-items: center;
@@ -1775,7 +1892,7 @@ font-family:'Garamond';
 .maestriastable  tr td:nth-child(1) a{
 	font-size:26px;
 	color: #f8f4ec;
-	background-color: #af8a2e;
+	background-color: #a89f97;
 	border:0px;
 	border-radius: 7px 7px 7px 7px;
 	margin-bottom:5px;
@@ -1796,7 +1913,7 @@ font-family:'Garamond';
 	font-family:'KungFu';
 	font-size:23px;
 	color: #f8f4ec;
-	background-color: #af8a2e;
+	background-color: #a89f97;
 	border:0px;
 	border-radius: 7px 0px 0px 7px;
 	margin-left:0px;
@@ -1809,11 +1926,12 @@ font-family:'Garamond';
 	grid-column: 2 / span 1;
 	grid-row: 1/ span 1;
 	color: #f8f4ec;
-	background-color: #af8a2e;
+	background-color: #a89f97;
 	border:0px;
-	height:100%
-	margin-top:10px;
+	height:100%;
 	border-radius: 0px 7px 7px 0px;
+	padding: 0px 0px;
+	margin:0px;
 }
 .maestriastable  tr td:nth-child(3) a{
 	border:0px;
@@ -1844,7 +1962,7 @@ font-family:'Garamond';
 }
 .tablaarmadurafixed tr{
 	display:grid;
-	grid-template-columns:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	grid-template-columns:12% 11% 11% 11% 11% 11% 11% 11% 11%;
 	grid-template-rows: auto;
 	font-family:'Garamond';
 	font-size:12px;
@@ -1854,23 +1972,20 @@ font-family:'Garamond';
  margin-bottom:5px;
 }
 .tablaarmadurafixed tr:nth-child(2) td:nth-child(1){
-	background-color: #58514e;
-	border-radius: 5px 0px 0px 5px;
-	margin-right:5px;
-}
-.tablaarmadurafixed tr:nth-child(2) td:nth-child(2){
 	border-width: 1.5px 0px 1.5px 1.5px;
+    background-color:transparent;
 	border-color: black;
 	border-style: solid;
 	border-radius:5px 0px 0px 5px;
+    margin-right: 0px;
 }
 .tablaarmadurafixed tr:nth-child(2) td:nth-child(2){
-	border-width: 1.5px 0px 1.5px 1.5px;
+	border-width: 1.5px 0px 1.5px 0px;
 	border-color: black;
 	border-style: solid;
-	border-radius:5px 0px 0px 5px;
+	border-radius:0px 0px 0px 0px;
 }
-.tablaarmadurafixed tr:nth-child(2) td:nth-child(6){
+.tablaarmadurafixed tr:nth-child(2) td:nth-child(4){
 	border-width: 1.5px 1.5px 1.5px 0px;
 	border-color: black;
 	border-style: solid;
@@ -1882,50 +1997,25 @@ font-family:'Garamond';
 	border-style: solid;
 	border-radius:0px;
 }
-.tablaarmadurafixed tr:nth-child(2) td:nth-child(4){
-	border-width: 1.5px 0px 1.5px 0px;
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(1){
+	border-width: 1.5px 0px 1.5px 1.5px;
 	border-color: black;
 	border-style: solid;
-	border-radius:0px;
+	border-radius:5px 0px 0px 5px;
 }
-.tablaarmadurafixed tr:nth-child(2) td:nth-child(5){
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(2){
 	border-width: 1.5px 0px 1.5px 0px;
 	border-color: black;
 	border-style: solid;
-	border-radius:0px;
+	border-radius:0px 0px 0px 0px;
 }
 
-.tablaarmadurafixed tr:nth-child(3) td:nth-child(2){
-	border-width: 1.5px 0px 1.5px 1.5px;
-	border-color: black;
-	border-style: solid;
-	border-radius:5px 0px 0px 5px;
-}
-.tablaarmadurafixed tr:nth-child(3) td:nth-child(2){
-	border-width: 1.5px 0px 1.5px 1.5px;
-	border-color: black;
-	border-style: solid;
-	border-radius:5px 0px 0px 5px;
-}
-.tablaarmadurafixed tr:nth-child(3) td:nth-child(5){
+.tablaarmadurafixed tr:nth-child(3) td:nth-child(3){
 	border-width: 1.5px 1.5px 1.5px 0px;
 	border-color: black;
 	border-style: solid;
 	border-radius:0px 5px 5px 0px;
 }
-.tablaarmadurafixed tr:nth-child(3) td:nth-child(3){
-	border-width: 1.5px 0px 1.5px 0px;
-	border-color: black;
-	border-style: solid;
-	border-radius:0px;
-}
-.tablaarmadurafixed tr:nth-child(3) td:nth-child(4){
-	border-width: 1.5px 0px 1.5px 0px;
-	border-color: black;
-	border-style: solid;
-	border-radius:0px;
-}
-
 .tablaarmadurafixed table{
 	border: 0px;
 	background:transparent;
@@ -1934,22 +2024,16 @@ font-family:'Garamond';
 	border-spacing: 0px 5px;
 }
 .tablaarmadurafixed tr td:nth-child(1){
-	grid-column: 1 / span 2;
+	grid-column: 1 / span 3;
 }
 .tablaarmadurafixed tr td:nth-child(2){
-	grid-column: 3 / span 3;
+	grid-column: 4 / span 2;
 }
 .tablaarmadurafixed tr td:nth-child(3){
 	grid-column: 6 / span 2;
 }
 .tablaarmadurafixed tr td:nth-child(4){
-	grid-column: 8 / span 1;
-}
-.tablaarmadurafixed tr td:nth-child(5){
-	grid-column: 9 / span 1;
-}
-.tablaarmadurafixed tr td:nth-child(6){
-	grid-column: 10 / span 1;
+	grid-column: 8 / span 2;
 }
 .tablaarmadurafixed tr:first-child td:nth-child(2){
 	margin:5px 0px 0px 0px;
@@ -1966,7 +2050,7 @@ font-family:'Garamond';
 	font-family:'Garamond';
 	font-size:15px;
 	color: #f8f4ec;
-	background-color: #58514e;
+	background-color: #6a5b51;
 	border-radius: 7px 0px 0px 7px;
 	margin-left:0px;
 	padding-left:3px;
@@ -1980,8 +2064,6 @@ font-family:'Garamond';
 	font-family:'Garamond';
 	font-size:15px;
 	color: black;
-	border-left:1.5px solid black;
-	border-radius:0px;
 }
 .armaduraclass1 input[type="text"]{
 	border:0px;
@@ -1999,8 +2081,6 @@ font-family:'Garamond';
 	font-family:'Garamond';
 	font-size:15px;
 	color: black;
-	border-left:1.5px solid black;
-	border-radius:0px;
 }
 .checksarmadura div:empty{
 	display: none;
@@ -2022,15 +2102,15 @@ font-family:'Garamond';
 	background-color: transparent;
 }
 .tableobjmag table tr td:first-child{
-	background-color: #58514e;
+	background-color: #a59d91;
 	border-radius:7px 0px 0px 7px;
 }
 .tableobjmag table tr td:nth-child(3){
-	background-color: #58514e;
+	background-color: #a59d91;
 	border-radius:0px 7px 7px 0px;
 }
 .tableobjmag table tr td:nth-child(2){
-	background-color: #58514e;
+	background-color: #a59d91;
 }
 .tableobjmag table tr {
 	margin-bottom:5px;
@@ -2100,12 +2180,12 @@ font-family:'Garamond';
 }
 .tablaconjurosdin2  tr td:nth-child(2){
 	grid-column: 7 / span 4;
-	background-color: #322618;
+	background-color: #9c1006;
 	border-radius:7px 0px 0px 7px;
 	height:100%;
 }
 .tablaconjurosdin2  tr td:nth-child(3){
-	background-color: #322618;
+	background-color: #9c1006;
 	border-radius:0px 7px 7px 0px;
 	height:100%;
 }
@@ -2227,7 +2307,7 @@ font-family:'Garamond';
 	gap:0px;
 }
 .panelvitasombra1 {
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:3px;
 	border-style: solid;
 	border-radius:7px;
@@ -2239,7 +2319,7 @@ font-family:'Garamond';
 	left:-2%;
 }
 .panelvitasombra2 {
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:3px;
 	border-style: solid;
 	border-radius:7px;
@@ -2251,7 +2331,7 @@ font-family:'Garamond';
 	left:-2%;
 }
 .panelvitasombra3 {
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:3px;
 	border-style: solid;
 	border-radius:7px;
@@ -2263,7 +2343,7 @@ font-family:'Garamond';
 	left:-2%;
 }
 .panelvitasombra4 {
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:3px;
 	border-style: solid;
 	border-radius:7px;
@@ -2275,7 +2355,7 @@ font-family:'Garamond';
 	left:-2%;
 }
 .panelvitasombra5 {
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:3px;
 	border-style: solid;
 	border-radius:7px;
@@ -2293,16 +2373,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check12vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck12 input[type="checkbox"]:checked {
 	background-image: url(../assets/check12vitachecked.webp);
@@ -2316,16 +2400,20 @@ font-family:'Garamond';
 	-webkit-appearance: initial;
     appearance: initial;
 	transform: scale(1.2);
-	border-color: #58514e;
+	border-color: #6a5b51;
 	border-width:1.5px;
 	border-style: solid;
-	border-radius:3px;
+	border-radius:50%;
 	background-image: url(../assets/check34vita.webp);
 	background-color:white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
     cursor: pointer;
+	min-width: 20px;
+	min-height:20px;
+	max-width: 20px;
+	max-height:20px;
 }
 .vitacheck34 input[type="checkbox"]:checked {
 	background-image: url(../assets/check34vitachecked.webp);
@@ -2343,6 +2431,7 @@ font-family:'Garamond';
 	border-bottom:1px solid black;
 	border-radius: 0px;
 	font-size:15px;
+	color: black;
 }
 .panelmultip2 {
     display: grid;
@@ -2360,4 +2449,230 @@ font-family:'Garamond';
 	font-family: 'KungFu';
     font-size: 25px;
     font-weight: 200;
+}
+.hitostandard input[type="checkbox"]::before {
+    content: "";
+}
+.hito1d input[type="checkbox"]::before, .hito2d input[type="checkbox"]::before, .hito3d input[type="checkbox"]::before, .hito4d input[type="checkbox"]::before, .hito5d input[type="checkbox"]::before, .hito6d input[type="checkbox"]::before {
+    content: "";
+}
+.vitacheck1 input[type="checkbox"]::before, .vitacheck2 input[type="checkbox"]::before, .vitacheck3 input[type="checkbox"]::before, .vitacheck4 input[type="checkbox"]::before, .vitacheck5 input[type="checkbox"]::before, .vitacheck6 input[type="checkbox"]::before, .vitacheck12 input[type="checkbox"]::before, .vitacheck34 input[type="checkbox"]::before {
+    content: "";
+}
+.incapcheck1 input[type="checkbox"]::before, .incapcheck2 input[type="checkbox"]::before {
+   content: "";
+}
+.checksmaestrias input[type="checkbox"]::before {
+   content: "";
+}
+.checkarmad input[type="checkbox"]::before {
+   content: "";
+}
+.canscheck1 input[type="checkbox"]::before, .canscheck2 input[type="checkbox"]::before{
+   content: "";
+}
+
+
+
+.hitostandard input[type="checkbox"]:checked::after {
+    content: "";
+}
+.hito1d input[type="checkbox"]:checked::after, .hito2d input[type="checkbox"]:checked::after, .hito3d input[type="checkbox"]:checked::after, .hito4d input[type="checkbox"]:checked::after, .hito5d input[type="checkbox"]:checked::after, .hito6d input[type="checkbox"]:checked::after {
+    content: "";
+}
+.vitacheck1 input[type="checkbox"]:checked::after, .vitacheck2 input[type="checkbox"]:checked::after, .vitacheck3 input[type="checkbox"]:checked::after, .vitacheck4 input[type="checkbox"]:checked::after, .vitacheck5 input[type="checkbox"]:checked::after, .vitacheck6 input[type="checkbox"]:checked::after, .vitacheck12 input[type="checkbox"]:checked::after, .vitacheck34 input[type="checkbox"]:checked::after {
+    content: "";
+}
+.incapcheck1 input[type="checkbox"]:checked::after, .incapcheck2 input[type="checkbox"]:checked::after {
+   content: "";
+}
+.checksmaestrias input[type="checkbox"]:checked::after {
+   content: "";
+}
+.checkarmad input[type="checkbox"]:checked::after {
+   content: "";
+}
+.canscheck1 input[type="checkbox"]:checked::after, .canscheck2 input[type="checkbox"]:checked::after {
+   content: "";
+}
+
+.sheet summary:before {
+	border-color: transparent transparent transparent #000000;
+}
+.sheet p {
+    color:black;
+}
+table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+table th, table td {
+    padding: 0px;
+}
+.panelvitasombra1 {
+    border-color: #6a5b51;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    position: absolute;
+    margin: 0px;
+    height: 46px;
+    width: 104%;
+    top: 20px;
+    left: -2%;
+}
+.panelvitasombra2 {
+    border-color: #6a5b51;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    position: absolute;
+    margin: 0px;
+    height: 39px;
+    width: 104%;
+    top: 63px;
+    left: -2%;
+}
+.panelvitasombra3 {
+    border-color: #6a5b51;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    position: absolute;
+    margin: 0px;
+    height: 39px;
+    width: 104%;
+    top: 99px;
+    left: -2%;
+}
+.panelvitasombra4 {
+    border-color: #6a5b51;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    position: absolute;
+    margin: 0px;
+    height: 39px;
+    width: 104%;
+    top: 135px;
+    left: -2%;
+}
+.panelvitasombra5 {
+    border-color: #6a5b51;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    position: absolute;
+    margin: 0px;
+    height: 39px;
+    width: 104%;
+    top: 171px;
+    left: -2%;
+}
+.titulosvitaincap {
+    font-family: 'KungFu';
+    font-size: 26px;
+    color: #f8f4ec;
+    background-color: #9c1006;
+    border-radius: 7px 7px 7px 7px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height:42.5px;
+}
+.panelvitaincapa {
+    position: relative;
+    justify-content: flex-start;
+}
+.checksarmadura {
+    gap: 5px;
+    margin-top: 36px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    border-image-source: url(../assets/cajaarmadura.webp);
+    border-image-slice: 10%;
+    border-image-width: 10%;
+    border-image-outset: 2px;
+    height: 36px;
+}
+.armaduraclass input[type="text"] {
+    border: 0px;
+    background: transparent;
+    margin: 6px 0px 6px 0px;
+    font-family: 'Garamond';
+    font-size: 15px;
+    color: black;
+    border-left: 1.5px solid black;
+    border-radius: 0px;
+}
+.tablaarmas2 td div{
+    margin: 5px 0px 5px 0px;
+}
+.tituloidiomas {
+    font-family: 'KungFu';
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #f8f4ec;
+    background-color: #322520;
+    border-radius: 7px 7px 7px 7px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+	max-height: 42.5px;
+}
+.panelcanssombra {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    position: absolute;
+    margin: 0px;
+    height: 55%;
+    width: 104%;
+    top: 21%;
+    left: -2%;
+}
+.escudoarmas img {
+    border: 0px;
+    max-width: 90%;
+    height: 200px;
+    width: auto;
+    text-align:center;
+    margin:auto;
+}
+.chat-message .message-content button {
+    font-family: 'Garamond';
+    font-size: 20px;
+    width: auto;
+    color: black;
+    background-color: transparent;
+    border-image-source: url(../assets/cajaarmadura.webp);
+    border-image-slice: 10%;
+    border-image-width: 10%;
+    border-image-outset: 2px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.inputdescrojo input[type="text"] {
+    font-family: "Garamond";
+    font-size: 17px;
+    background: transparent;
+    border-image-source: url(../assets/cajadesc2.webp);
+    border-image-slice: 15%;
+    border-image-width: 50px 150px;
+    height: 41.25px;
+    width: 100%;
+}
+.maestriasproteccion tbody {
+  display:grid;
+  grid-template-columns: 49% 49%;
+  gap:10px;
+}
+.marginzero {
+	margin:0px;
+}
+.incapcheckpnj {
+  margin-bottom:5px;
 }

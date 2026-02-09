@@ -17,26 +17,68 @@
 #logo {
     content: url(../assets/TituloEsquina.webp);
 }
-.sheet .window-content {
+.custom-system-rollable, .custom-system-rollable > *{
+	color: #f8f4ec;
+}
+.tablaarmas2 .custom-system-rollable, .tablaarmas2 .custom-system-rollable > * {
+	color: black;
+}													 
+.character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
     background: url(../assets/FondoRI.webp);
     background-size: cover;
 }
-.sheet input[type=text] {
+.character input[type=text], .equippableItem input[type=text], .custom-dialog input[type=text]{
 		box-shadow:0px 0px;
 		padding:0px;
 		color: black;
 		border: 1px solid black;
 }
-.sheet select{
+.character select, .equippableItem select, .custom-dialog select{
 	color:black;
 	background:transparent;
 	border: 1px solid black;
 }
-.sheet .window-content .fas:before {
+.character .fas:before, .equippableItem .fas:before, .custom-dialog  .fas:before{
     color:black;
 }
-.sheet .window-content .fa-dice:before {
-	color:white
+.character .fa-dice:before, .equippableItem .fa-dice:before, .custom-dialog  .fa-dice:before {
+	color:white;
+}
+.character .tablaarmas2 .fa-dice:before {
+    color: black;
+}
+.custom-system-user-inputs td button {
+    color: black;
+}
+.custom-dialog .form-group > label {
+	color: black;
+}
+.custom-system-number-field-control {
+	background:transparent;
+	color:black;
+	border:1px solid black;
+}
+.custom-system-user-input-button {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px groove black;
+    color: black
+}
+.custom-dialog .standard-form .form-footer > button {
+  color:black;
+  background:transparent;
+  border: 2px groove black;
+} 
+.custom-system-user-inputs {
+	background:transparent;
+	color:black;
+}
+.character .content-link, .equippableItem .content-link, .custom-dialog .content-link {
+  background:transparent;
+  color: black;
+  border: 0px;
+}
+.character , .equippableItem , .custom-dialog  {
+	color: black;
 }
 .charname{
 	font-family:'KungFu';
@@ -53,7 +95,7 @@
 	text-decoration: underline;
 	color:black;
 }
-.panelarmasvida{
+.panelarmasvida  > :first-child{
 	grid-template-columns:66% 34%;
 	width:100%;
 	gap:0px;
@@ -203,7 +245,7 @@ font-family:'Garamond';
 	display:flex;
 	align-items: center;
 }
-.custom-system-user-input-block {
+.custom-system-user-input-block   > :first-child{
 	display:grid;
 	grid-template-columns: auto auto auto;
 }
@@ -366,6 +408,7 @@ font-family:'Garamond';
 .deschito {
 	font-family:'GaramondBdIt';
 	font-size:15px;
+	color:black;		 
 }
 .deschitotext {
 	font-family:'GaramondIt';
@@ -391,7 +434,7 @@ font-family:'Garamond';
 	color: #f8f4ec;
 	padding: 5px 0px 5px 0px;
 }
-.paneldescriptionsrojo {
+.paneldescriptionsrojo   > :first-child{
 	display:grid;
 	grid-template-columns:25% 75%;
 	gap:5px;
@@ -410,11 +453,11 @@ font-family:'Garamond';
 .panel0margin {
 	margin:0px;
 }
-.panel50 {
+.panel50   > :first-child{
 	display:grid;
 	grid-template-columns:50% 50%;
 }
-.panelpuntosevo {
+.panelpuntosevo   > :first-child{
 	margin:0px;
 	background-color: black;
 	border-radius: 5px;
@@ -503,7 +546,7 @@ font-family:'Garamond';
 	padding-top:4px;
 	padding-bottom:4px;
 }
-.panelmaestrias {
+.panelmaestrias   > :first-child{
 	display:grid;
 	gap:0px;
 	margin:0px;
@@ -722,8 +765,12 @@ font-family:'Garamond';
 }
 .panelchecksvitaincap {
     margin-top: 0px;
+	margin-bottom: 10px;				 
     gap: 4px;
 }
+.panelchecksvitaincap  > :first-child{
+    margin: 0px;
+}									  
 .incapcheck1, .incapcheck2{
 	margin:0px;
 }
@@ -1116,7 +1163,7 @@ font-family:'Garamond';
 	background-size: contain;
     cursor: pointer;
 }
-.panelarmadura {
+.panelarmadura   > :first-child{
 	display:grid;
 	gap:5px;
 	margin:0px;
@@ -1151,7 +1198,7 @@ font-family:'Garamond';
 .custom-system-user-inputs thead{
 	display: none;
 }
-.panelmagiagrande {
+.panelmagiagrande > :first-child{
 	margin:0px;
 	gap:0px;
 	grid-template-columns:30% 70%;
@@ -1949,7 +1996,7 @@ font-family:'Garamond';
 	font-size:15px;
 	color: black;
 }
-.panelarmadurafixed {
+.panelarmadurafixed   > :first-child{
 	display:grid;
 	gap:5px;
 	margin:0px;
@@ -2232,7 +2279,7 @@ font-family:'Garamond';
 	font-family: 'GaramondIt';
 	font-size:18px;
 }
-.paneldescarmas {
+.paneldescarmas   > :first-child{
 	display:grid;
 	grid-template-columns: 25% 70%;
 }
@@ -2289,19 +2336,19 @@ font-family:'Garamond';
     width: 100%;
     text-align: center;
 }
-.panelmasvit {
+.panelmasvit   > :first-child{
 	display:grid;
 	grid-template-columns: 35% 60%;
 	margin:0px;
 	gap:5px;
 }
-.panelmultip {
+.panelmultip   > :first-child{
 	display:grid;
 	grid-template-columns: 70% 30%;
 	margin:0px;
 	gap:0px;
 }
-.panelmas {
+.panelmas   > :first-child{
 	display:grid;
 	margin:0px;
 	gap:0px;
@@ -2471,9 +2518,6 @@ font-family:'Garamond';
 .canscheck1 input[type="checkbox"]::before, .canscheck2 input[type="checkbox"]::before{
    content: "";
 }
-
-
-
 .hitostandard input[type="checkbox"]:checked::after {
     content: "";
 }
@@ -2496,11 +2540,11 @@ font-family:'Garamond';
    content: "";
 }
 
-.sheet summary:before {
+.character summary:before, .equippableItem summary:before, .custom-dialog summary:before {
 	border-color: transparent transparent transparent #000000;
 }
-.sheet p {
-    color:black;
+.character p, .equippableItem p, .custom-dialog p {
+    color:black;		
 }
 table tbody tr:nth-child(even) {
     background-color: transparent;
@@ -2674,5 +2718,12 @@ table th, table td {
 	margin:0px;
 }
 .incapcheckpnj {
-  margin-bottom:5px;
+  margin-bottom:0px;
 }
+.chat-message .message-content h4 {
+    font-family: 'KungFu';
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    border: 0px;
+}								   

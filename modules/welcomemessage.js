@@ -63,6 +63,8 @@ Hooks.once("ready", function() {
 						}, 500);
 						game.user.setFlag("the-winter-king-csb", "welcomeMessage", true);
 						game.user.setFlag("the-winter-king-csb", "lastVersion", game.modules.get("the-winter-king-csb").version);
+						ui.notifications.info(game.i18n.localize("Templates imported. Reloading world in 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 100);
@@ -109,6 +111,8 @@ Hooks.once("ready", function() {
 							let docs2 =  collection2.importAll({folderId: folderident2, folderName: "Actor_Templates", keepId: true});
 						}, 500);
 						game.user.setFlag("the-winter-king-csb", "lastVersion", game.modules.get("the-winter-king-csb").version);
+						ui.notifications.info(game.i18n.localize("Templates imported. Reloading world in 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 500);
